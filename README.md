@@ -30,42 +30,47 @@ docker build --target oai-smf --tag oai-smf:v1.4.0 \
   component/oai-smf
 
 
-  docker build --target oai-nrf --tag oai-nrf:v1.4.0 \
-  --file component/oai-nrf/docker/Dockerfile.nrf.ubuntu \
-  component/oai-nrf
+docker build --target oai-nrf --tag oai-nrf:v1.4.0 \
+--file component/oai-nrf/docker/Dockerfile.nrf.ubuntu \
+component/oai-nrf
 
 
-  docker build --target oai-spgwu-tiny --tag oai-spgwu-tiny:v1.4.0 \
-  --file component/oai-upf-equivalent/docker/Dockerfile.ubuntu \
-  component/oai-upf-equivalent
+docker build --target oai-spgwu-tiny --tag oai-spgwu-tiny:v1.4.0 \
+--file component/oai-upf-equivalent/docker/Dockerfile.ubuntu \
+component/oai-upf-equivalent
 
 
-  docker build --target oai-ausf --tag oai-ausf:v1.4.0 \
-  --file component/oai-ausf/docker/Dockerfile.ausf.ubuntu \
-  component/oai-ausf
+docker build --target oai-ausf --tag oai-ausf:v1.4.0 \
+--file component/oai-ausf/docker/Dockerfile.ausf.ubuntu \
+component/oai-ausf
 
 
-  docker build --target oai-udm --tag oai-udm:v1.4.0 \
-  --file component/oai-udm/docker/Dockerfile.udm.ubuntu \
-  component/oai-udm
+docker build --target oai-udm --tag oai-udm:v1.4.0 \
+--file component/oai-udm/docker/Dockerfile.udm.ubuntu \
+component/oai-udm
 
 
-  docker build --target oai-udr --tag oai-udr:v1.4.0 \
-  --file component/oai-udr/docker/Dockerfile.udr.ubuntu \
-  component/oai-udr
+docker build --target oai-udr --tag oai-udr:v1.4.0 \
+--file component/oai-udr/docker/Dockerfile.udr.ubuntu \
+component/oai-udr
 
 
-  docker build --target oai-upf-vpp --tag oai-upf-vpp:v1.4.0 \
-  --file component/oai-upf-vpp/docker/Dockerfile.upf-vpp.ubuntu \
-  component/oai-upf-vpp
+docker build --target oai-upf-vpp --tag oai-upf-vpp:v1.4.0 \
+--file component/oai-upf-vpp/docker/Dockerfile.upf-vpp.ubuntu \
+component/oai-upf-vpp
 
 
-  docker build --target oai-nssf --tag oai-nssf:v1.4.0 \
-  --file component/oai-nssf/docker/Dockerfile.nssf.ubuntu \
-  component/oai-nssf
+docker build --target oai-nssf --tag oai-nssf:v1.4.0 \
+--file component/oai-nssf/docker/Dockerfile.nssf.ubuntu \
+component/oai-nssf
 
 
-  docker build --target trf-gen-cn5g --tag trf-gen-cn5g:latest \
-  --file ci-scripts/Dockerfile.traffic.generator.ubuntu18.04 \
-  .
+docker build --target trf-gen-cn5g --tag trf-gen-cn5g:latest \
+--file ci-scripts/Dockerfile.traffic.generator.ubuntu18.04 \
+.
+```
+
+### Check Containers
+```
+docker ps -a
 ```
